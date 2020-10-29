@@ -1,8 +1,10 @@
 from PIL import Image
 import os
 
+
+
 source_diectory="/home/vikas/Pictures/"
-dest_diectory="/home/vikas/Pictures/test/"
+dest_diectory=os.path.join(source_diectory,"/test/")
 desired_size=100000
 os.makedirs(dest_diectory,exist_ok=True)
 
